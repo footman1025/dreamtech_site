@@ -1,0 +1,102 @@
+/* ── Metaverse Hero Banner ── */
+.metaverse-hero {
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  background: linear-gradient(135deg, #0d1b4b 0%, #1a1060 40%, #2d1b6e 70%, #1e0a4a 100%);
+  overflow: hidden;
+  margin-top: -64px;
+  padding-top: 64px;
+}
+
+/* Swirly background effect */
+.metaverse-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 70% 50%, rgba(120, 60, 220, 0.35) 0%, transparent 60%),
+    radial-gradient(ellipse at 30% 80%, rgba(60, 20, 180, 0.3) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.metaverse-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 72px;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.metaverse-hero-left {
+  flex: 1;
+  max-width: 520px;
+}
+
+.metaverse-hero-left h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.12;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.metaverse-hero-left p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.75;
+  margin-bottom: 36px;
+}
+
+.metaverse-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 32px;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(79, 70, 229, 0.4);
+}
+
+.metaverse-hero-btn:hover {
+  background: #6366f1;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(79, 70, 229, 0.6);
+}
+
+.metaverse-hero-right {
+  flex-shrink: 0;
+  width: 480px;
+}
+
+.metaverse-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 960px) {
+  .metaverse-hero-inner {
+    flex-direction: column;
+    padding: 60px 32px;
+    gap: 40px;
+  }
+  .metaverse-hero-left { max-width: 100%; }
+  .metaverse-hero-right { width: 100%; max-width: 480px; }
+}
+
+@media (max-width: 480px) {
+  .metaverse-hero-inner { padding: 48px 24px; }
+  .metaverse-hero-left h1 { font-size: clamp(28px, 7vw, 40px); }
+}
