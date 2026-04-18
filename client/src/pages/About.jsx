@@ -157,10 +157,53 @@ const team = [
 ];
 
 const values = [
-  { icon: '⛓️', title: 'Chain-Native', desc: 'We build for the blockchain from day one — not as an afterthought. Every product is designed for decentralization.' },
-  { icon: '🔒', title: 'Security First', desc: 'Every smart contract we ship is audited. Security is not a feature — it is the foundation.' },
-  { icon: '🌐', title: 'Multi-Chain', desc: 'We support Ethereum, Polygon, Solana, BNB Chain, Arbitrum, and more. Your product should not be chain-limited.' },
-  { icon: '📈', title: 'Built to Scale', desc: 'From 100 users to 1 million — our infrastructure handles growth without compromising decentralization.' },
+  {
+    icon: (
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="24" height="24" rx="8" fill="#eff6ff"/>
+        <path d="M12 3L4 7v5c0 4.418 3.582 8 8 8s8-3.582 8-8V7l-8-4z" stroke="#3b82f6" strokeWidth="1.5" strokeLinejoin="round"/>
+        <path d="M9 12l2 2 4-4" stroke="#3b82f6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
+    title: 'Chain-Native',
+    desc: 'We build for the blockchain from day one — not as an afterthought. Every product is designed for decentralization.'
+  },
+  {
+    icon: (
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="24" height="24" rx="8" fill="#fef3c7"/>
+        <rect x="7" y="11" width="10" height="8" rx="2" stroke="#f59e0b" strokeWidth="1.5"/>
+        <path d="M9 11V8a3 3 0 0 1 6 0v3" stroke="#f59e0b" strokeWidth="1.5" strokeLinecap="round"/>
+        <circle cx="12" cy="15" r="1" fill="#f59e0b"/>
+      </svg>
+    ),
+    title: 'Security First',
+    desc: 'Every smart contract we ship is audited. Security is not a feature — it is the foundation.'
+  },
+  {
+    icon: (
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="24" height="24" rx="8" fill="#ecfdf5"/>
+        <circle cx="12" cy="12" r="7" stroke="#10b981" strokeWidth="1.5"/>
+        <path d="M12 5c0 0-3 3-3 7s3 7 3 7" stroke="#10b981" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M12 5c0 0 3 3 3 7s-3 7-3 7" stroke="#10b981" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M5 12h14" stroke="#10b981" strokeWidth="1.5" strokeLinecap="round"/>
+      </svg>
+    ),
+    title: 'Multi-Chain',
+    desc: 'We support Ethereum, Polygon, Solana, BNB Chain, Arbitrum, and more. Your product should not be chain-limited.'
+  },
+  {
+    icon: (
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="24" height="24" rx="8" fill="#fdf4ff"/>
+        <path d="M5 17l4-4 3 3 4-5 3 3" stroke="#a855f7" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M17 8h2v2" stroke="#a855f7" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
+    title: 'Built to Scale',
+    desc: 'From 100 users to 1 million — our infrastructure handles growth without compromising decentralization.'
+  },
 ];
 
 export default function About() {

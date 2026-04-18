@@ -37,7 +37,8 @@ export default function CaseStudies() {
           aria-hidden="true"
         />
         <div className="cs-hero-content">
-          <h1>Software Development<br />Case Studies &amp;<br />Completed Projects</h1>
+          <span className="cs-hero-eyebrow">Portfolio</span>
+          <h1>Case Studies &amp;<br />Completed Projects</h1>
           <p>We work with innovative entrepreneurs to launch products that solve real market needs and create delightful experiences for their users.</p>
           <Link to="/contact" className="cs-hero-btn">Book a call</Link>
         </div>

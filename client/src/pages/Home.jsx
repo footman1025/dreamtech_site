@@ -146,14 +146,14 @@ const techStackData = {
 };
 
 const homeTeam = [
-  { name: 'Gabriel Ohno',  role: 'CEO & Co-Founder',     bio: "My mission is to ensure that we, at DreamTech, always stick to our values. We have an obsession with our clients' success, laser focus on select few businesses and staying at the forefront of blockchain development.", founder: true, img: 'https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=400&h=500&fit=crop&crop=face' },
-  { name: 'James Rivera',  role: 'Co-Founder & CTO',     bio: 'I am a scientist turned Software Engineer turned Senior IT Consultant and will be the bridge between your business objectives and development strategies. My intention is to become your ultimate development partner.', founder: true, img: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400&h=500&fit=crop&crop=face' },
-  { name: 'Rebeka Galic',  role: 'Head of Business Development', img: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400&h=460&fit=crop&crop=face' },
-  { name: 'Marcus Lee',    role: 'Partnership Manager',  img: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400&h=460&fit=crop&crop=face' },
-  { name: 'Tom Nguyen',    role: 'Lead Project Manager', img: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=400&h=460&fit=crop&crop=face' },
-  { name: 'David Kim',     role: 'Marketing Manager',    img: 'https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=460&fit=crop&crop=face' },
-  { name: 'Ryan Patel',    role: 'Tech Lead',             img: 'https://images.pexels.com/photos/1484794/pexels-photo-1484794.jpeg?auto=compress&cs=tinysrgb&w=400&h=460&fit=crop&crop=face' },
-  { name: 'Liam Chen',     role: 'Tech Lead',             img: 'https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=400&h=460&fit=crop&crop=face' },
+  { name: 'Gabriel Ohno',  role: 'CEO & Co-Founder',     bio: "My mission is to ensure that we, at DreamTech, always stick to our values. We have an obsession with our clients' success, laser focus on select few businesses and staying at the forefront of blockchain development.", founder: true, img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&h=500&q=90&crop=face' },
+  { name: 'James Rivera',  role: 'Co-Founder & CTO',     bio: 'I am a scientist turned Software Engineer turned Senior IT Consultant and will be the bridge between your business objectives and development strategies. My intention is to become your ultimate development partner.', founder: true, img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&h=500&q=90&crop=face' },
+  { name: 'Rebeka Galic',  role: 'Head of Business Development', img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&h=700&q=90&crop=face' },
+  { name: 'Marcus Lee',    role: 'Partnership Manager',  img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&h=700&q=90&crop=face' },
+  { name: 'Tom Nguyen',    role: 'Lead Project Manager', img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&h=700&q=90&crop=face' },
+  { name: 'David Kim',     role: 'Marketing Manager',    img: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&h=700&q=90&crop=face' },
+  { name: 'Ryan Patel',    role: 'Tech Lead',             img: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&h=700&q=90&crop=face' },
+  { name: 'Liam Chen',     role: 'Tech Lead',             img: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=600&h=700&q=90&crop=face' },
 ];
 
 function ServicesSlider({ services, serviceImages, t }) {
@@ -330,16 +330,17 @@ function HomeTeam() {
         <div className="team-founders-grid">
           {homeTeam.filter(m => m.founder).map(m => (
             <div key={m.name} className="team-founder-card">
-              <div className="tfc-info">
-                <h3>{m.name}</h3>
-                <p className="tfc-role">{m.role}</p>
-                <p className="tfc-bio">{m.bio}</p>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="tfc-linkedin" aria-label="LinkedIn">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                </a>
-              </div>
               <div className="tfc-img-wrap">
                 <img src={m.img} alt={m.name} className="tfc-img" />
+              </div>
+              <div className="tfc-info">
+                <p className="tfc-role">{m.role}</p>
+                <h3>{m.name}</h3>
+                <p className="tfc-bio">{m.bio}</p>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="tfc-linkedin" aria-label="LinkedIn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  LinkedIn
+                </a>
               </div>
             </div>
           ))}
@@ -350,7 +351,7 @@ function HomeTeam() {
           {homeTeam.filter(m => !m.founder).map(m => (
             <div key={m.name} className="team-member-card">
               <img src={m.img} alt={m.name} className="tmc-img" />
-              <div className="tmc-bar">
+              <div className="tmc-overlay">
                 <span className="tmc-name">{m.name}</span>
                 <span className="tmc-role">{m.role}</span>
               </div>

@@ -212,7 +212,7 @@ export default function Navbar() {
         {/* Right */}
         <div className="navbar-right">
           <LangSwitcher />
-          <Link to="/contact" className="nav-contact-btn">Contact us</Link>
+          <Link to="/contact" className="nav-contact-btn">{t.nav?.contact || 'Contact us'}</Link>
           <button
             className={`hamburger ${mobileOpen ? 'is-open' : ''}`}
             onClick={() => setMobileOpen(!mobileOpen)}

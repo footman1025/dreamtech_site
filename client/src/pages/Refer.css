@@ -3,11 +3,11 @@
 /* ── Hero ── */
 .refer-hero {
   position: relative;
-  min-height: 420px;
+  min-height: 520px;
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding-top: 62px;
+  padding-top: 64px;
 }
 
 .refer-hero-bg {
@@ -22,7 +22,7 @@
 .refer-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, rgba(10,20,50,0.72) 40%, rgba(10,20,50,0.25) 100%);
+  background: linear-gradient(120deg, rgba(5,10,40,0.88) 0%, rgba(10,20,60,0.72) 55%, rgba(10,20,50,0.25) 100%);
   z-index: 1;
 }
 
@@ -30,27 +30,29 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 60px 48px;
+  padding: 80px 72px;
 }
 
-.refer-hero-left { max-width: 520px; }
+.refer-hero-left { max-width: 580px; }
 
 .refer-hero-left h1 {
-  font-size: 44px;
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(36px, 5vw, 62px);
   font-weight: 800;
   color: #fff;
-  line-height: 1.2;
-  margin-bottom: 16px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  letter-spacing: -1.5px;
 }
 
 .refer-hero-left p {
   font-size: 15px;
-  color: rgba(255,255,255,0.75);
-  line-height: 1.65;
-  margin-bottom: 28px;
-  max-width: 400px;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.75;
+  margin-bottom: 32px;
+  max-width: 460px;
 }
 
 .refer-hero-btn {

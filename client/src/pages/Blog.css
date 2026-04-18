@@ -335,11 +335,11 @@
 /* ── Blog Hero ── */
 .blog-hero {
   position: relative;
-  min-height: 220px;
+  min-height: 480px;
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding-top: 62px;
+  padding-top: 64px;
 }
 
 .blog-hero-bg {
@@ -350,25 +350,32 @@
 
 .blog-hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(100deg, rgba(60,50,140,0.78) 40%, rgba(60,50,140,0.35) 100%);
+  background: linear-gradient(120deg, rgba(20,15,80,0.88) 0%, rgba(60,50,140,0.72) 55%, rgba(60,50,140,0.3) 100%);
   z-index: 1;
 }
 
 .blog-hero-content {
   position: relative; z-index: 2;
-  max-width: 1280px; margin: 0 auto;
-  padding: 48px 48px;
+  width: 100%;
+  max-width: 1400px; margin: 0 auto;
+  padding: 80px 72px;
 }
 
 .blog-hero-content h1 {
-  font-size: 30px; font-weight: 800;
-  color: #fff; line-height: 1.25;
-  margin-bottom: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(32px, 4.5vw, 56px);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.12;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
 }
 
 .blog-hero-content p {
-  font-size: 13px; color: rgba(255,255,255,0.75);
-  margin-bottom: 20px;
+  font-size: 15px; color: rgba(255,255,255,0.7);
+  line-height: 1.75;
+  margin-bottom: 28px;
+  max-width: 460px;
 }
 
 .blog-subscribe {
