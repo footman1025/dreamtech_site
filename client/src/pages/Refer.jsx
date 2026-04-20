@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useLang } from '../context/LangContext';
 import './Refer.css';
 
 const STEPS = [
@@ -16,6 +17,8 @@ const FAQS = [
 ];
 
 export default function Refer() {
+  const { t } = useLang();
+  const r = t.refer || {};
   const [form, setForm] = useState({ name: '', email: '', company: '', message: '' });
   const [status, setStatus] = useState(null);
   const [openFaq, setOpenFaq] = useState(null);
@@ -45,22 +48,24 @@ export default function Refer() {
         />
         <div className="refer-hero-content">
           <div className="refer-hero-left">
-            <h1>Earn $10,000 from<br />project sales</h1>
-            <p>Receive an additional 10% of project revenue starting from the second month</p>
-            <a href="#refer-form" className="refer-hero-btn">Become a partner</a>
+            <h1>{(r.heroTitle || 'Earn $10,000 from\nproject sales').split('\n').map((line, i) => (
+              <span key={i}>{line}{i === 0 && <br />}</span>
+            ))}</h1>
+            <p>{r.heroSub || 'Receive an additional 10% of project revenue starting from the second month'}</p>
+            <a href="#refer-form" className="refer-hero-btn">{r.heroBtn || 'Become a partner'}</a>
             <div className="refer-hero-badges">
               <div className="refer-badge-clutch">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="#e53e3e"><polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/></svg>
                 <div>
                   <span className="badge-score">4.9</span>
                   <div className="badge-stars">★★★★★</div>
-                  <span className="badge-source">Based on 60 Clutch reviews</span>
+                  <span className="badge-source">{r.clutchLabel || 'Based on 60 Clutch reviews'}</span>
                 </div>
               </div>
               <div className="refer-badge-upwork">
                 <span className="upwork-logo">Up<span>work</span></span>
                 <div className="badge-stars upwork-stars">★★★★★</div>
-                <span className="badge-source">100+ reviews</span>
+                <span className="badge-source">{r.upworkLabel || '100+ reviews'}</span>
               </div>
             </div>
           </div>

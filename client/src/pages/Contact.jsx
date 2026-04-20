@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import './Contact.css';
+import contactBg from '../assets/contact.jpg';
+import { useLang } from '../context/LangContext';
 
 function StarField() {
   const canvasRef = useRef(null);
@@ -195,6 +197,8 @@ const features = [
 ];
 
 export default function Contact() {
+  const { t } = useLang();
+  const cp = t.contactPage;
   const [form, setForm] = useState({
     name: '', email: '', country: '', dialcode: '+1', phone: '', message: '',
   });
@@ -216,12 +220,14 @@ export default function Contact() {
 
   return (
     <main className="contact-page">
-      {/* Starfield animation */}
-      <StarField />
-      {/* Background texture */}
-      <div className="contact-bg" aria-hidden="true" />
+      {/* ── Hero with background image ── */}
+      <div className="contact-hero" style={{ backgroundImage: `url(${contactBg})` }}>
+        {/* Starfield animation */}
+        <StarField />
+        {/* Background overlay */}
+        <div className="contact-bg" aria-hidden="true" />
 
-      <div className="contact-wrap">
+        <div className="contact-wrap">
         {/* ── Left ── */}
         <div className="contact-left">
           <div className="contact-left-card">
@@ -247,16 +253,16 @@ export default function Contact() {
         {/* ── Right: Form card ── */}
         <div className="contact-right">
           <div className="contact-card">
-            <h2>Share Your Project's Vision</h2>
+            <h2>{cp.title || 'Share Your Project\'s Vision'}</h2>
 
             <form onSubmit={handleSubmit} noValidate>
               <div className="cf-row">
                 <input
-                  name="name" type="text" placeholder="Full Name"
+                  name="name" type="text" placeholder={cp.namePlaceholder}
                   value={form.name} onChange={handleChange} required
                 />
                 <input
-                  name="email" type="email" placeholder="Work Email"
+                  name="email" type="email" placeholder={cp.emailPlaceholder}
                   value={form.email} onChange={handleChange} required
                 />
               </div>
@@ -282,7 +288,7 @@ export default function Contact() {
               </div>
 
               <textarea
-                name="message" rows={4} placeholder="Describe your project..."
+                name="message" rows={4} placeholder={cp.messagePlaceholder}
                 value={form.message} onChange={handleChange} required
               />
 
@@ -301,16 +307,17 @@ export default function Contact() {
                 <span>Your idea is 100% protected by our <strong>Non Disclosure Agreement</strong>.</span>
               </div>
 
-              {status === 'success' && <p className="cf-success">Message sent! We'll be in touch shortly.</p>}
-              {status === 'error'   && <p className="cf-error">Something went wrong. Please try again.</p>}
+              {status === 'success' && <p className="cf-success">{cp.success}</p>}
+              {status === 'error'   && <p className="cf-error">{cp.error}</p>}
 
               <button type="submit" className="cf-submit" disabled={status === 'loading'}>
-                {status === 'loading' ? 'Sending…' : 'Submit'}
+                {status === 'loading' ? cp.sending : cp.send}
               </button>
             </form>
           </div>
         </div>
       </div>
+      </div>{/* end contact-hero */}
 
       {/* ── Trusted Clients — full width white section ── */}
       <section className="clients-section">

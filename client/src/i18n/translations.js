@@ -68,6 +68,7 @@ export const translations = {
       fullName: 'Full Name', email: 'Email', password: 'Password',
       confirmPassword: 'Confirm Password', noAccount: "Don't have an account?",
       hasAccount: 'Already have an account?', signUp: 'Sign up', signInLink: 'Sign in',
+      namePlaceholder: 'Your name', emailPlaceholder: 'your@email.com',
     },
     footer: {
       desc: 'DreamTech builds production-grade blockchain infrastructure — DeFi protocols, smart contract platforms, Web3 wallets, and on-chain analytics.',
@@ -93,6 +94,13 @@ export const translations = {
       upgrade: 'Upgrade', downgrade: 'Downgrade',
       noPlan: "You don't have an active plan yet. Pick one above to get started.",
       cancel: 'To cancel your membership,', contactSupport: 'contact support',
+    },
+    refer: {
+      heroTitle: 'Earn $10,000 from\nproject sales',
+      heroSub: 'Receive an additional 10% of project revenue starting from the second month',
+      heroBtn: 'Become a partner',
+      clutchLabel: 'Based on 60 Clutch reviews',
+      upworkLabel: '100+ reviews',
     },
   },
 
@@ -165,6 +173,7 @@ export const translations = {
       fullName: 'Nombre Completo', email: 'Correo', password: 'Contraseña',
       confirmPassword: 'Confirmar Contraseña', noAccount: '¿No tienes cuenta?',
       hasAccount: '¿Ya tienes cuenta?', signUp: 'Regístrate', signInLink: 'Inicia sesión',
+      namePlaceholder: 'Tu nombre', emailPlaceholder: 'tu@correo.com',
     },
     footer: {
       desc: 'Diseña, construye y asegura productos web, móviles y blockchain con SDLC de nivel empresarial e integraciones de IA.',
@@ -190,6 +199,13 @@ export const translations = {
       upgrade: 'Mejorar', downgrade: 'Reducir',
       noPlan: 'Aún no tienes un plan activo. Elige uno arriba para comenzar.',
       cancel: 'Para cancelar tu membresía,', contactSupport: 'contacta soporte',
+    },
+    refer: {
+      heroTitle: 'Gana $10,000 de\nventas de proyectos',
+      heroSub: 'Recibe un 10% adicional de los ingresos del proyecto a partir del segundo mes',
+      heroBtn: 'Conviértete en socio',
+      clutchLabel: 'Basado en 60 reseñas de Clutch',
+      upworkLabel: '100+ reseñas',
     },
   },
 
@@ -262,6 +278,7 @@ export const translations = {
       fullName: 'Nom Complet', email: 'E-mail', password: 'Mot de passe',
       confirmPassword: 'Confirmer le mot de passe', noAccount: "Vous n'avez pas de compte?",
       hasAccount: 'Vous avez déjà un compte?', signUp: "S'inscrire", signInLink: 'Se connecter',
+      namePlaceholder: 'Votre nom', emailPlaceholder: 'votre@email.com',
     },
     footer: {
       desc: 'Concevez, construisez et sécurisez des produits web, mobiles et blockchain avec un SDLC de niveau entreprise.',
@@ -287,6 +304,13 @@ export const translations = {
       upgrade: 'Améliorer', downgrade: 'Réduire',
       noPlan: "Vous n'avez pas encore de plan actif. Choisissez-en un ci-dessus pour commencer.",
       cancel: 'Pour annuler votre abonnement,', contactSupport: 'contactez le support',
+    },
+    refer: {
+      heroTitle: 'Gagnez 10 000 $ grâce\naux ventes de projets',
+      heroSub: 'Recevez 10% supplémentaires des revenus du projet à partir du deuxième mois',
+      heroBtn: 'Devenir partenaire',
+      clutchLabel: 'Basé sur 60 avis Clutch',
+      upworkLabel: '100+ avis',
     },
   },
 
@@ -359,6 +383,7 @@ export const translations = {
       fullName: 'Volledige Naam', email: 'E-mail', password: 'Wachtwoord',
       confirmPassword: 'Wachtwoord Bevestigen', noAccount: 'Heeft u geen account?',
       hasAccount: 'Heeft u al een account?', signUp: 'Aanmelden', signInLink: 'Inloggen',
+      namePlaceholder: 'Uw naam', emailPlaceholder: 'uw@email.com',
     },
     footer: {
       desc: 'Ontwerp, bouw en beveilig web-, mobiele en blockchain-producten met enterprise-grade SDLC en AI-integraties.',
@@ -384,6 +409,13 @@ export const translations = {
       upgrade: 'Upgraden', downgrade: 'Downgraden',
       noPlan: 'U heeft nog geen actief plan. Kies er een hierboven om te beginnen.',
       cancel: 'Om uw lidmaatschap te annuleren,', contactSupport: 'neem contact op met support',
+    },
+    refer: {
+      heroTitle: 'Verdien $10.000 met\nprojectverkopen',
+      heroSub: 'Ontvang een extra 10% van de projectinkomsten vanaf de tweede maand',
+      heroBtn: 'Word partner',
+      clutchLabel: 'Gebaseerd op 60 Clutch-beoordelingen',
+      upworkLabel: '100+ beoordelingen',
     },
   },
 
@@ -456,6 +488,7 @@ export const translations = {
       fullName: 'Nome Completo', email: 'E-mail', password: 'Senha',
       confirmPassword: 'Confirmar Senha', noAccount: 'Não tem uma conta?',
       hasAccount: 'Já tem uma conta?', signUp: 'Cadastrar', signInLink: 'Entrar',
+      namePlaceholder: 'Seu nome', emailPlaceholder: 'seu@email.com',
     },
     footer: {
       desc: 'Projete, construa e proteja produtos web, móveis e blockchain com SDLC de nível empresarial e integrações de IA.',
@@ -481,6 +514,13 @@ export const translations = {
       upgrade: 'Melhorar', downgrade: 'Reduzir',
       noPlan: 'Você ainda não tem um plano ativo. Escolha um acima para começar.',
       cancel: 'Para cancelar sua assinatura,', contactSupport: 'entre em contato com o suporte',
+    },
+    refer: {
+      heroTitle: 'Ganhe $10.000 com\nvendas de projetos',
+      heroSub: 'Receba 10% adicionais da receita do projeto a partir do segundo mês',
+      heroBtn: 'Torne-se parceiro',
+      clutchLabel: 'Baseado em 60 avaliações do Clutch',
+      upworkLabel: '100+ avaliações',
     },
   },
 
@@ -553,6 +593,7 @@ export const translations = {
       fullName: 'Nome Completo', email: 'E-mail', password: 'Password',
       confirmPassword: 'Conferma Password', noAccount: 'Non hai un account?',
       hasAccount: 'Hai già un account?', signUp: 'Registrati', signInLink: 'Accedi',
+      namePlaceholder: 'Il tuo nome', emailPlaceholder: 'tua@email.com',
     },
     footer: {
       desc: 'Progetta, costruisci e proteggi prodotti web, mobile e blockchain con SDLC di livello enterprise e integrazioni AI.',
@@ -578,6 +619,13 @@ export const translations = {
       upgrade: 'Aggiorna', downgrade: 'Declassa',
       noPlan: 'Non hai ancora un piano attivo. Scegline uno sopra per iniziare.',
       cancel: 'Per annullare il tuo abbonamento,', contactSupport: 'contatta il supporto',
+    },
+    refer: {
+      heroTitle: 'Guadagna $10.000 dalle\nvendite di progetti',
+      heroSub: 'Ricevi un ulteriore 10% dei ricavi del progetto a partire dal secondo mese',
+      heroBtn: 'Diventa partner',
+      clutchLabel: 'Basato su 60 recensioni Clutch',
+      upworkLabel: '100+ recensioni',
     },
   },
 };
